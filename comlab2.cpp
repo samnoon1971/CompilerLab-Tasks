@@ -8,7 +8,7 @@ set <string> numeric ={"1", "2", "3", "4", "5", "6", "7", "8", "9", "0"};
 vector <pair<string, set <string> > > operators;
 bool cmp(char c)
 {
-    return (c<'a' || c>'z') || (c<'A' && c>'Z');
+    return (c<'a' && c>'z') || (c<'A' && c>'Z');
 }
 set <string> text;
 void init()
